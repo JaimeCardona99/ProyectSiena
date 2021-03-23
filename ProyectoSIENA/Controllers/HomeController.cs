@@ -12,6 +12,13 @@ namespace ProyectoSIENA.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            /*MantenimientoUsuario ma = new MantenimientoUsuario();
+            Usuario usu = ma.RecuperarPorDocumento(long.Parse(collection["documento"].ToString()));
+
+            if (usu != null)
+                return View("Details", usu);
+            else
+                return View("AprendizNoExistente");*/
             return View();
         }
         // GET: Home/Details/5

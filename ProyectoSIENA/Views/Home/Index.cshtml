@@ -4,15 +4,15 @@
     Layout = "~/Views/Shared/_Principal.cshtml";
 }
 
-<h2>Sistema de aprendices egresados SENA</h2>
+<h2>Index</h2>
+@using (Html.BeginForm())
+{
+    <p>
+        Ingrese el documento del Aprendiz a buscar:
+        @Html.TextBox("documento")
+    </p>
+    <p>
+        <input type="submit" value="Buscar" />
+    </p>
 
-<p>
-    Ingrese el codigo del articulo a buscar:
-    @Html.TextBox("Documento")
-</p>
-<p>
-    <input type="submit" value="Buscar" />
-</p>
-
-
-
+}
